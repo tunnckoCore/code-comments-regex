@@ -1,7 +1,7 @@
 /**
- * strip-comments <https://github.com/jonschlinkert/strip-comments>
+ * code-comments-regex <https://github.com/regexps/code-comments-regex>
  *
- * Copyright (c) 2014 Jon Schlinkert, contributors.
+ * Copyright (c) 2014 Sindre Sorhus, Jon Schlinkert, Charlike Mike Reagents, contributors.
  * Licensed under the MIT license.
  */
 
@@ -44,7 +44,7 @@ function cli(args, callback) {
 }
 
 
-describe('strip-comments', function() {
+describe('code-comments-regex', function() {
   strip = filter(strip, '*');
   forOwn(strip, function(fn, method) {
     it('should strip ' + method, function(done) {
@@ -57,7 +57,7 @@ describe('strip-comments', function() {
   });
 });
 
-describe('strip-comments in safe mode {safe:true}', function() {
+describe('code-comments-regex in safe mode {safe:true}', function() {
   strip = filter(strip, '*');
   forOwn(strip, function(fn, method) {
     it('should strip ' + method, function(done) {

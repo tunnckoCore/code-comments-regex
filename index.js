@@ -1,7 +1,7 @@
 /**
  * code-comments-regex <https://github.com/regexps/code-comments-regex>
  *
- * Copyright (c) 2014 Jon Schlinkert, contributors.
+ * Copyright (c) 2014 Sindre Sorhus, Jon Schlinkert, Charlike Mike Reagents, contributors.
  * Licensed under the MIT license.
  */
 
