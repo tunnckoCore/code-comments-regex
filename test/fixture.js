@@ -50,6 +50,7 @@ console.dir({
 /**
  * suggested at regexps/code-comments-regex/issues/1
  * some @license MIT 2014
+ * PRs welcome
  */
 process.stdout.write('RegExp literals: ');
 console.dir({

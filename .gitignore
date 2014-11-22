@@ -39,3 +39,5 @@ tmp
 .DS_Store
 Thumbs.db
 npm-debug.log
+
+test/actual
