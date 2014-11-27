@@ -19,7 +19,9 @@
     "url": "git://github.com/tunnckoCore/code-comments-regex.git"
   },
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "meow": "*"
+  },
   "devDependencies": {
     "filter-object": "^0.1.3",
     "for-own": "^0.1.2",
