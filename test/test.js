@@ -14,7 +14,6 @@ var forOwn = require('for-own');
 var filter = require('filter-object');
 var strip = require('../index');
 
-
 function join(fp) {
   return path.join(__dirname, fp);
 }
@@ -29,20 +28,19 @@ function normalize(str) {
 }
 
 function cli(args, callback) {
-  exec(join('../bin/cli.js') + [''].concat(args).join(' '), function (err, stdout) {
+  exec(join('../bin/cli.js') + [''].concat(args).join(' '), function(err, stdout) {
     if (err) {
-        callback(err);
-        return;
-      }
-      if (!err && (typeof stdout === 'string' || typeof stdout === null)) {
-        callback(null)
-        return;
-      }
-      callback(new Error('Something goes wrong. Unknown error.'));
+      callback(err);
       return;
+    }
+    if (!err && (typeof stdout === 'string' || typeof stdout === null)) {
+      callback(null)
+      return;
+    }
+    callback(new Error('Something goes wrong. Unknown error.'));
+    return;
   });
 }
-
 
 describe('code-comments-regex', function() {
   strip = filter(strip, '*');

@@ -27,7 +27,7 @@ var cli = meow({
     '  ccr file.js output.js',
     '  ccr commented.js cleaned.js line',
     '  ccr --method block --output out/putfile.js -i path/to/file.js',
-    '',
+    ''
   ].join('\n')
 });
 
@@ -37,7 +37,6 @@ var program = {
   method: cli.input[2] || cli.flags.m || cli.flags.method || 'all',
   safe: cli.input[3] || cli.flags.s || cli.flags.safe || false
 };
-
 
 if (program.input && program.output) {
   var safe = program.safe === true ? {safe:true} : {};
